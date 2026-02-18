@@ -5,6 +5,7 @@ using MasPatas.Infrastructure.Repositories;
 using MasPatas.Infrastructure.Security;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using MongoDB.Driver;
 
 namespace MasPatas.Infrastructure.DependencyInjection;
 
@@ -16,6 +17,11 @@ public static class InfrastructureServiceRegistration
         services.Configure<JwtSettings>(configuration.GetSection(JwtSettings.SectionName));
 
         services.AddSingleton<MongoDbContext>();
+        services.AddScoped<IMongoDatabase>(sp =>
+                                            {
+                                                var context = sp.GetRequiredService<MongoDbContext>();
+                                                return context.Database;
+                                            });
 
         services.AddScoped<IProductRepository, ProductRepository>();
         services.AddScoped<ICustomerRepository, CustomerRepository>();

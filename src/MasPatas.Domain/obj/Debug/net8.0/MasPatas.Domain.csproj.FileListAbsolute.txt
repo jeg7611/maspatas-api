@@ -1,0 +1,12 @@
+C:\Cursos\NetCore\MasPatasApi\src\MasPatas.Domain\bin\Debug\net8.0\MasPatas.Domain.deps.json
+C:\Cursos\NetCore\MasPatasApi\src\MasPatas.Domain\bin\Debug\net8.0\MasPatas.Domain.dll
+C:\Cursos\NetCore\MasPatasApi\src\MasPatas.Domain\bin\Debug\net8.0\MasPatas.Domain.pdb
+C:\Cursos\NetCore\MasPatasApi\src\MasPatas.Domain\obj\Debug\net8.0\MasPatas.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Cursos\NetCore\MasPatasApi\src\MasPatas.Domain\obj\Debug\net8.0\MasPatas.Domain.AssemblyInfoInputs.cache
+C:\Cursos\NetCore\MasPatasApi\src\MasPatas.Domain\obj\Debug\net8.0\MasPatas.Domain.AssemblyInfo.cs
+C:\Cursos\NetCore\MasPatasApi\src\MasPatas.Domain\obj\Debug\net8.0\MasPatas.Domain.csproj.CoreCompileInputs.cache
+C:\Cursos\NetCore\MasPatasApi\src\MasPatas.Domain\obj\Debug\net8.0\MasPatas.Domain.sourcelink.json
+C:\Cursos\NetCore\MasPatasApi\src\MasPatas.Domain\obj\Debug\net8.0\MasPatas.Domain.dll
+C:\Cursos\NetCore\MasPatasApi\src\MasPatas.Domain\obj\Debug\net8.0\refint\MasPatas.Domain.dll
+C:\Cursos\NetCore\MasPatasApi\src\MasPatas.Domain\obj\Debug\net8.0\MasPatas.Domain.pdb
+C:\Cursos\NetCore\MasPatasApi\src\MasPatas.Domain\obj\Debug\net8.0\ref\MasPatas.Domain.dll

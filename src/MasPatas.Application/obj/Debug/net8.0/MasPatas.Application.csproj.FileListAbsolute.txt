@@ -1,0 +1,16 @@
+C:\Cursos\NetCore\MasPatasApi\src\MasPatas.Application\bin\Debug\net8.0\MasPatas.Application.deps.json
+C:\Cursos\NetCore\MasPatasApi\src\MasPatas.Application\bin\Debug\net8.0\MasPatas.Application.dll
+C:\Cursos\NetCore\MasPatasApi\src\MasPatas.Application\bin\Debug\net8.0\MasPatas.Application.pdb
+C:\Cursos\NetCore\MasPatasApi\src\MasPatas.Application\bin\Debug\net8.0\MasPatas.Domain.dll
+C:\Cursos\NetCore\MasPatasApi\src\MasPatas.Application\bin\Debug\net8.0\MasPatas.Domain.pdb
+C:\Cursos\NetCore\MasPatasApi\src\MasPatas.Application\obj\Debug\net8.0\MasPatas.Application.csproj.AssemblyReference.cache
+C:\Cursos\NetCore\MasPatasApi\src\MasPatas.Application\obj\Debug\net8.0\MasPatas.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Cursos\NetCore\MasPatasApi\src\MasPatas.Application\obj\Debug\net8.0\MasPatas.Application.AssemblyInfoInputs.cache
+C:\Cursos\NetCore\MasPatasApi\src\MasPatas.Application\obj\Debug\net8.0\MasPatas.Application.AssemblyInfo.cs
+C:\Cursos\NetCore\MasPatasApi\src\MasPatas.Application\obj\Debug\net8.0\MasPatas.Application.csproj.CoreCompileInputs.cache
+C:\Cursos\NetCore\MasPatasApi\src\MasPatas.Application\obj\Debug\net8.0\MasPatas.Application.sourcelink.json
+C:\Cursos\NetCore\MasPatasApi\src\MasPatas.Application\obj\Debug\net8.0\MasPatas.D266E8F2.Up2Date
+C:\Cursos\NetCore\MasPatasApi\src\MasPatas.Application\obj\Debug\net8.0\MasPatas.Application.dll
+C:\Cursos\NetCore\MasPatasApi\src\MasPatas.Application\obj\Debug\net8.0\refint\MasPatas.Application.dll
+C:\Cursos\NetCore\MasPatasApi\src\MasPatas.Application\obj\Debug\net8.0\MasPatas.Application.pdb
+C:\Cursos\NetCore\MasPatasApi\src\MasPatas.Application\obj\Debug\net8.0\ref\MasPatas.Application.dll

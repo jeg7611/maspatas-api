@@ -15,6 +15,8 @@ public class MongoDbContext
         _database = client.GetDatabase(settings.Value.DatabaseName);
     }
 
+    public IMongoDatabase Database => _database;
+
     public IMongoCollection<Product> Products => _database.GetCollection<Product>("Products");
     public IMongoCollection<Customer> Customers => _database.GetCollection<Customer>("Customers");
     public IMongoCollection<Inventory> Inventory => _database.GetCollection<Inventory>("Inventory");

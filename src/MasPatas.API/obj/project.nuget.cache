@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TJZV7IkMhnc=",
+  "dgSpecHash": "TIFe2e8Sdyw=",
   "success": true,
-  "projectFilePath": "C:\\Cursos\\NetCore\\MasPatasApi\\src\\MasPatas.API\\MasPatas.API.csproj",
+  "projectFilePath": "C:\\Cursos\\NetCore\\MasPatasApi\\src\\MasPatas.Api\\MasPatas.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\egarcia\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\egarcia\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

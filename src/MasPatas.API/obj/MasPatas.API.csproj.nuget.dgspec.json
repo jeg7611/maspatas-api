@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Cursos\\NetCore\\MasPatasApi\\src\\MasPatas.API\\MasPatas.API.csproj": {}
+    "C:\\Cursos\\NetCore\\MasPatasApi\\src\\MasPatas.Api\\MasPatas.API.csproj": {}
   },
   "projects": {
-    "C:\\Cursos\\NetCore\\MasPatasApi\\src\\MasPatas.API\\MasPatas.API.csproj": {
+    "C:\\Cursos\\NetCore\\MasPatasApi\\src\\MasPatas.Api\\MasPatas.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Cursos\\NetCore\\MasPatasApi\\src\\MasPatas.API\\MasPatas.API.csproj",
+        "projectUniqueName": "C:\\Cursos\\NetCore\\MasPatasApi\\src\\MasPatas.Api\\MasPatas.API.csproj",
         "projectName": "MasPatas.API",
-        "projectPath": "C:\\Cursos\\NetCore\\MasPatasApi\\src\\MasPatas.API\\MasPatas.API.csproj",
+        "projectPath": "C:\\Cursos\\NetCore\\MasPatasApi\\src\\MasPatas.Api\\MasPatas.API.csproj",
         "packagesPath": "C:\\Users\\egarcia\\.nuget\\packages\\",
-        "outputPath": "C:\\Cursos\\NetCore\\MasPatasApi\\src\\MasPatas.API\\obj\\",
+        "outputPath": "C:\\Cursos\\NetCore\\MasPatasApi\\src\\MasPatas.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\egarcia\\AppData\\Roaming\\NuGet\\NuGet.Config",

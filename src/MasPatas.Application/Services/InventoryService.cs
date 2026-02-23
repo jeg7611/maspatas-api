@@ -60,4 +60,10 @@ public class InventoryService
         await _inventoryMovementRepository.CreateAsync(movement, cancellationToken);
         return _mapper.Map<InventoryMovementDto>(movement);
     }
+
+    public async Task<List<InventoryMovementDto>> GetInventoryMovementsAsync(CancellationToken cancellationToken = default)
+    {
+        var movements = await _inventoryMovementRepository.GetAllAsync(cancellationToken);
+        return _mapper.Map<List<InventoryMovementDto>>(movements);
+    }
 }

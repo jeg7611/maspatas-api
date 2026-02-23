@@ -25,4 +25,8 @@ public class AuthController : ControllerBase
     [Authorize(Policy = "AdminOnly")]
     public async Task<ActionResult<UserDto>> Register([FromBody] CreateUserRequest request, CancellationToken cancellationToken)
         => Ok(await _service.CreateUserAsync(request, cancellationToken));
+
+     [HttpGet]
+    public async Task<ActionResult<List<UserDto>>> Get(CancellationToken cancellationToken)
+        => Ok(await _service.GetUsersAsync(cancellationToken));
 }

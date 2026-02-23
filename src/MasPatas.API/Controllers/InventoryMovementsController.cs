@@ -20,4 +20,8 @@ public class InventoryMovementsController : ControllerBase
     [HttpPost]
     public async Task<ActionResult<InventoryMovementDto>> Create([FromBody] AddInventoryMovementRequest request, CancellationToken cancellationToken)
         => Ok(await _service.AddInventoryMovementAsync(request, cancellationToken));
+
+    [HttpGet]
+    public async Task<ActionResult<List<InventoryMovementDto>>> Get(CancellationToken cancellationToken)
+        => Ok(await _service.GetInventoryMovementsAsync(cancellationToken));
 }

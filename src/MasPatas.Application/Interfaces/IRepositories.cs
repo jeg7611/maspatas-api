@@ -25,6 +25,7 @@ public interface IInventoryRepository
 public interface IInventoryMovementRepository
 {
     Task CreateAsync(InventoryMovement movement, CancellationToken cancellationToken = default);
+    Task<List<InventoryMovement>> GetAllAsync(CancellationToken cancellationToken = default);
 }
 
 public interface ISaleRepository
@@ -37,4 +38,5 @@ public interface IUserRepository
 {
     Task CreateAsync(User user, CancellationToken cancellationToken = default);
     Task<User?> GetByUsernameAsync(string username, CancellationToken cancellationToken = default);
+    Task<List<User>> GetAllAsync(CancellationToken cancellationToken = default);
 }

@@ -52,4 +52,10 @@ public class AuthService
         var token = _tokenService.GenerateToken(user);
         return new AuthResponse(token, user.Username, user.Role);
     }
+
+    public async Task<List<UserDto>> GetUsersAsync(CancellationToken cancellationToken = default)
+    {
+        var users = await _userRepository.GetAllAsync(cancellationToken);
+        return _mapper.Map<List<UserDto>>(users);
+    }
 }

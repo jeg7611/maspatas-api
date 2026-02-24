@@ -20,18 +20,24 @@ public class GlobalExceptionMiddleware
         {
             await _next(context);
         }
+        catch (OperationCanceledException)
+        {
+            // Request cancelada por el cliente ? no es error real
+            context.Response.StatusCode = StatusCodes.Status499ClientClosedRequest;
+        }
         catch (Exception ex)
         {
             _logger.LogError(ex, "Unhandled exception");
+
+            context.Response.StatusCode = StatusCodes.Status500InternalServerError;
             context.Response.ContentType = "application/json";
-            context.Response.StatusCode = ex switch
+
+            var response = new
             {
-                UnauthorizedAccessException => (int)HttpStatusCode.Unauthorized,
-                InvalidOperationException => (int)HttpStatusCode.BadRequest,
-                _ => (int)HttpStatusCode.InternalServerError
+                message = "An unexpected error occurred."
             };
 
-            await context.Response.WriteAsync(JsonSerializer.Serialize(new { message = ex.Message }));
+            await context.Response.WriteAsJsonAsync(response);
         }
     }
 }

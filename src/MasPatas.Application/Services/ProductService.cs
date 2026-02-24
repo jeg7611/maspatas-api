@@ -19,6 +19,7 @@ public class ProductService
     public async Task<ProductDto> CreateProductAsync(CreateProductRequest request, CancellationToken cancellationToken = default)
     {
         var product = _mapper.Map<Product>(request);
+        product.Active = true; // Ensure new products are active by default
         await _productRepository.CreateAsync(product, cancellationToken);
         return _mapper.Map<ProductDto>(product);
     }

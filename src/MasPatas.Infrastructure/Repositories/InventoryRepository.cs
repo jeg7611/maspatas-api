@@ -28,4 +28,16 @@ public class InventoryRepository : IInventoryRepository
             new ReplaceOptions { IsUpsert = true },
             cancellationToken);
     }
+
+    public async Task<bool> ReserveStockAsync(Guid productId, int quantity, IClientSessionHandle session, CancellationToken cancellationToken = default)
+    {
+        var filter = Builders<Inventory>.Filter.And(
+            Builders<Inventory>.Filter.Eq(x => x.ProductId, productId),
+            Builders<Inventory>.Filter.Gte(x => x.Stock, quantity));
+
+        var update = Builders<Inventory>.Update.Inc(x => x.Stock, -quantity);
+
+        var result = await _context.Inventory.UpdateOneAsync(session, filter, update, cancellationToken: cancellationToken);
+        return result.ModifiedCount == 1;
+    }
 }

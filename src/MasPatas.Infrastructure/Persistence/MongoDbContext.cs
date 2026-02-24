@@ -7,14 +7,16 @@ namespace MasPatas.Infrastructure.Persistence;
 
 public class MongoDbContext
 {
+    private readonly IMongoClient _client;
     private readonly IMongoDatabase _database;
 
     public MongoDbContext(IOptions<MongoDbSettings> settings)
     {
-        var client = new MongoClient(settings.Value.ConnectionString);
-        _database = client.GetDatabase(settings.Value.DatabaseName);
+        _client = new MongoClient(settings.Value.ConnectionString);
+        _database = _client.GetDatabase(settings.Value.DatabaseName);
     }
 
+    public IMongoClient Client => _client;
     public IMongoDatabase Database => _database;
 
     public IMongoCollection<Product> Products => _database.GetCollection<Product>("Products");
@@ -23,4 +25,6 @@ public class MongoDbContext
     public IMongoCollection<InventoryMovement> InventoryMovements => _database.GetCollection<InventoryMovement>("InventoryMovements");
     public IMongoCollection<Sale> Sales => _database.GetCollection<Sale>("Sales");
     public IMongoCollection<User> Users => _database.GetCollection<User>("Users");
+    public IMongoCollection<AuditLog> AuditLogs => _database.GetCollection<AuditLog>("AuditLogs");
+    public IMongoCollection<IdempotencyRecord> IdempotencyRecords => _database.GetCollection<IdempotencyRecord>("IdempotencyRecords");
 }

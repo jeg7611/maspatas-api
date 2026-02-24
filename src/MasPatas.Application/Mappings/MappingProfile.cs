@@ -18,6 +18,7 @@ public class MappingProfile : Profile
         CreateMap<InventoryMovement, InventoryMovementDto>();
 
         CreateMap<SaleItem, SaleItemDto>();
+        CreateMap<Payment, PaymentDto>();
         CreateMap<Sale, SaleDto>();
 
         CreateMap<User, UserDto>();

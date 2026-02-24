@@ -17,9 +17,17 @@ public class SalesController : ControllerBase
         _service = service;
     }
 
-    [HttpPost]
-    public async Task<ActionResult<SaleDto>> Create([FromBody] RegisterSaleRequest request, CancellationToken cancellationToken)
-        => Ok(await _service.RegisterSaleAsync(request, cancellationToken));
+    [HttpPost("sell")]
+    public async Task<ActionResult<SaleDto>> Sell([FromBody] CreateSaleCommand request, CancellationToken cancellationToken)
+        => Ok(await _service.CreateSaleAsync(request, cancellationToken));
+
+    [HttpPost("pay")]
+    public async Task<ActionResult<SaleDto>> Pay([FromBody] RegisterPaymentCommand request, CancellationToken cancellationToken)
+        => Ok(await _service.RegisterPaymentAsync(request, cancellationToken));
+
+    [HttpPost("cancel")]
+    public async Task<ActionResult<SaleDto>> Cancel([FromBody] CancelSaleCommand request, CancellationToken cancellationToken)
+        => Ok(await _service.CancelSaleAsync(request, cancellationToken));
 
     [HttpGet]
     public async Task<ActionResult<List<SaleDto>>> Get(CancellationToken cancellationToken)

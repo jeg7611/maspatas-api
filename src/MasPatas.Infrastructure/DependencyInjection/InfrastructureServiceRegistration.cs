@@ -2,6 +2,7 @@ using MasPatas.Application.Interfaces;
 using MasPatas.Infrastructure.Configuration;
 using MasPatas.Infrastructure.Persistence;
 using MasPatas.Infrastructure.Repositories;
+using MasPatas.Infrastructure.Resilience;
 using MasPatas.Infrastructure.Security;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -18,16 +19,20 @@ public static class InfrastructureServiceRegistration
 
         services.AddSingleton<MongoDbContext>();
         services.AddScoped<IMongoDatabase>(sp =>
-                                            {
-                                                var context = sp.GetRequiredService<MongoDbContext>();
-                                                return context.Database;
-                                            });
+        {
+            var context = sp.GetRequiredService<MongoDbContext>();
+            return context.Database;
+        });
 
         services.AddScoped<IProductRepository, ProductRepository>();
         services.AddScoped<ICustomerRepository, CustomerRepository>();
         services.AddScoped<IInventoryRepository, InventoryRepository>();
         services.AddScoped<IInventoryMovementRepository, InventoryMovementRepository>();
         services.AddScoped<ISaleRepository, SaleRepository>();
+        services.AddScoped<IAuditLogRepository, AuditLogRepository>();
+        services.AddScoped<IIdempotencyRepository, IdempotencyRepository>();
+        services.AddScoped<IMongoTransactionManager, MongoTransactionManager>();
+        services.AddSingleton<IResiliencePolicyExecutor, PollyResiliencePolicyExecutor>();
         services.AddScoped<IUserRepository, UserRepository>();
 
         services.AddScoped<ITokenService, JwtTokenService>();

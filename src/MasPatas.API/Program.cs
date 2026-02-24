@@ -82,6 +82,7 @@ builder.Services.AddCors(options =>
 var app = builder.Build();
 
 app.UseMiddleware<GlobalExceptionMiddleware>();
+app.UseMiddleware<RequestContextMiddleware>();
 
 app.UseCors("AllowReact");
 

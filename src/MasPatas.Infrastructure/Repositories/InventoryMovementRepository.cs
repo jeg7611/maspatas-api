@@ -17,7 +17,9 @@ public class InventoryMovementRepository : IInventoryMovementRepository
     public async Task CreateAsync(InventoryMovement movement, CancellationToken cancellationToken = default)
         => await _context.InventoryMovements.InsertOneAsync(movement, cancellationToken: cancellationToken);
 
+    public async Task CreateAsync(InventoryMovement movement, IClientSessionHandle session, CancellationToken cancellationToken = default)
+        => await _context.InventoryMovements.InsertOneAsync(session, movement, cancellationToken: cancellationToken);
+
     public async Task<List<InventoryMovement>> GetAllAsync(CancellationToken cancellationToken = default)
         => await _context.InventoryMovements.Find(_ => true).ToListAsync(cancellationToken);
-
 }

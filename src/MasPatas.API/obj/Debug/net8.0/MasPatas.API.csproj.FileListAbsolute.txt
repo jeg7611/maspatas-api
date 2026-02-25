@@ -6,8 +6,6 @@ C:\Cursos\NetCore\MasPatasApi\src\MasPatas.API\bin\Debug\net8.0\MasPatas.API.dll
 C:\Cursos\NetCore\MasPatasApi\src\MasPatas.API\bin\Debug\net8.0\MasPatas.API.pdb
 C:\Cursos\NetCore\MasPatasApi\src\MasPatas.API\bin\Debug\net8.0\AutoMapper.dll
 C:\Cursos\NetCore\MasPatasApi\src\MasPatas.API\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
-C:\Cursos\NetCore\MasPatasApi\src\MasPatas.API\bin\Debug\net8.0\AWSSDK.Core.dll
-C:\Cursos\NetCore\MasPatasApi\src\MasPatas.API\bin\Debug\net8.0\AWSSDK.SecurityToken.dll
 C:\Cursos\NetCore\MasPatasApi\src\MasPatas.API\bin\Debug\net8.0\BCrypt.Net-Next.dll
 C:\Cursos\NetCore\MasPatasApi\src\MasPatas.API\bin\Debug\net8.0\DnsClient.dll
 C:\Cursos\NetCore\MasPatasApi\src\MasPatas.API\bin\Debug\net8.0\FluentValidation.dll
@@ -24,8 +22,6 @@ C:\Cursos\NetCore\MasPatasApi\src\MasPatas.API\bin\Debug\net8.0\Microsoft.Identi
 C:\Cursos\NetCore\MasPatasApi\src\MasPatas.API\bin\Debug\net8.0\Microsoft.OpenApi.dll
 C:\Cursos\NetCore\MasPatasApi\src\MasPatas.API\bin\Debug\net8.0\MongoDB.Bson.dll
 C:\Cursos\NetCore\MasPatasApi\src\MasPatas.API\bin\Debug\net8.0\MongoDB.Driver.dll
-C:\Cursos\NetCore\MasPatasApi\src\MasPatas.API\bin\Debug\net8.0\MongoDB.Driver.Core.dll
-C:\Cursos\NetCore\MasPatasApi\src\MasPatas.API\bin\Debug\net8.0\MongoDB.Libmongocrypt.dll
 C:\Cursos\NetCore\MasPatasApi\src\MasPatas.API\bin\Debug\net8.0\SharpCompress.dll
 C:\Cursos\NetCore\MasPatasApi\src\MasPatas.API\bin\Debug\net8.0\Snappier.dll
 C:\Cursos\NetCore\MasPatasApi\src\MasPatas.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
@@ -33,9 +29,6 @@ C:\Cursos\NetCore\MasPatasApi\src\MasPatas.API\bin\Debug\net8.0\Swashbuckle.AspN
 C:\Cursos\NetCore\MasPatasApi\src\MasPatas.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Cursos\NetCore\MasPatasApi\src\MasPatas.API\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Cursos\NetCore\MasPatasApi\src\MasPatas.API\bin\Debug\net8.0\ZstdSharp.dll
-C:\Cursos\NetCore\MasPatasApi\src\MasPatas.API\bin\Debug\net8.0\runtimes\linux\native\libmongocrypt.so
-C:\Cursos\NetCore\MasPatasApi\src\MasPatas.API\bin\Debug\net8.0\runtimes\osx\native\libmongocrypt.dylib
-C:\Cursos\NetCore\MasPatasApi\src\MasPatas.API\bin\Debug\net8.0\runtimes\win\native\mongocrypt.dll
 C:\Cursos\NetCore\MasPatasApi\src\MasPatas.API\bin\Debug\net8.0\MasPatas.Application.dll
 C:\Cursos\NetCore\MasPatasApi\src\MasPatas.API\bin\Debug\net8.0\MasPatas.Domain.dll
 C:\Cursos\NetCore\MasPatasApi\src\MasPatas.API\bin\Debug\net8.0\MasPatas.Infrastructure.dll
@@ -64,3 +57,5 @@ C:\Cursos\NetCore\MasPatasApi\src\MasPatas.API\obj\Debug\net8.0\refint\MasPatas.
 C:\Cursos\NetCore\MasPatasApi\src\MasPatas.API\obj\Debug\net8.0\MasPatas.API.pdb
 C:\Cursos\NetCore\MasPatasApi\src\MasPatas.API\obj\Debug\net8.0\MasPatas.API.genruntimeconfig.cache
 C:\Cursos\NetCore\MasPatasApi\src\MasPatas.API\obj\Debug\net8.0\ref\MasPatas.API.dll
+C:\Cursos\NetCore\MasPatasApi\src\MasPatas.API\bin\Debug\net8.0\Polly.dll
+C:\Cursos\NetCore\MasPatasApi\src\MasPatas.API\bin\Debug\net8.0\Polly.Core.dll

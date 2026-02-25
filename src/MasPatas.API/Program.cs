@@ -9,7 +9,14 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 
+using MongoDB.Bson;
+using MongoDB.Bson.Serialization;
+using MongoDB.Bson.Serialization.Serializers;
+
 var builder = WebApplication.CreateBuilder(args);
+
+// ===== Configuración MongoDB GUIDs global =====
+BsonSerializer.RegisterSerializer(new GuidSerializer(GuidRepresentation.Standard));
 
 // Clean Architecture composition root: API wires Application + Infrastructure.
 builder.Services.AddApplication();

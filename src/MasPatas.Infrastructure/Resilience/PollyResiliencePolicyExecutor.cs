@@ -2,6 +2,7 @@ using MasPatas.Application.Interfaces;
 using Polly;
 using Polly.CircuitBreaker;
 using Polly.Timeout;
+using Polly.Wrap;
 
 namespace MasPatas.Infrastructure.Resilience;
 

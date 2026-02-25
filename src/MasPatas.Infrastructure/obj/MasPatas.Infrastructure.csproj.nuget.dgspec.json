@@ -61,6 +61,10 @@
             "Microsoft.Extensions.DependencyInjection.Abstractions": {
               "target": "Package",
               "version": "[8.0.2, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[3.6.0, )"
             }
           },
           "imports": [
@@ -207,7 +211,11 @@
             },
             "MongoDB.Driver": {
               "target": "Package",
-              "version": "[2.25.0, )"
+              "version": "[3.6.0, )"
+            },
+            "Polly": {
+              "target": "Package",
+              "version": "[8.4.1, )"
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",

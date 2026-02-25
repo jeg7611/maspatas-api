@@ -15,6 +15,9 @@ public class MongoTransactionManager : IMongoTransactionManager
     public async Task<T> ExecuteAsync<T>(Func<IClientSessionHandle, Task<T>> action, CancellationToken cancellationToken = default)
     {
         using var session = await _context.Client.StartSessionAsync(cancellationToken: cancellationToken);
-        return await session.WithTransactionAsync(async (s, ct) => await action(s), cancellationToken: cancellationToken);
+
+        // En modo standalone MongoDB no soporta transacciones multi-documento.
+        // Ejecutamos la acción usando la sesión, pero sin envolverla en WithTransactionAsync.
+        return await action(session);
     }
 }

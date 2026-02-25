@@ -112,5 +112,5 @@ Con estas credenciales puedes llamar `POST /api/auth/login` y usar el token en S
 - API uses role-based policies:
   - `AdminOnly`: product and user management.
   - `SellerOrAdmin`: sales and inventory movements.
-- Ventas y pagos se ejecutan con transacciones MongoDB (`WithTransactionAsync`).
+- Ventas y pagos usan sesión MongoDB sin transacciones (`WithTransactionAsync` desactivado para soportar despliegues standalone).
 - Se aplica resiliencia con Polly (`Retry`, `CircuitBreaker`, `Bulkhead`, `Timeout` + fallback controlado).

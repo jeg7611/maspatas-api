@@ -97,6 +97,16 @@ Configuration is in `src/MasPatas.API/appsettings.json`:
 }
 ```
 
+## Usuario de prueba para JWT (Bearer)
+
+Al iniciar la API se crea automáticamente (si no existe) este usuario de prueba:
+
+- **Username**: `test.admin`
+- **Password**: `Test12345!`
+- **Role**: `Admin`
+
+Con estas credenciales puedes llamar `POST /api/auth/login` y usar el token en Swagger como `Bearer {token}`.
+
 ## Notes
 
 - API uses role-based policies:

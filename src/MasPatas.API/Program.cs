@@ -2,6 +2,7 @@ using System.Text;
 using FluentValidation;
 using FluentValidation.AspNetCore;
 using MasPatas.API.Middleware;
+using MasPatas.API.Services;
 using MasPatas.Application.DependencyInjection;
 using MasPatas.Infrastructure.Configuration;
 using MasPatas.Infrastructure.DependencyInjection;
@@ -14,6 +15,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Clean Architecture composition root: API wires Application + Infrastructure.
 builder.Services.AddApplication();
 builder.Services.AddInfrastructure(builder.Configuration);
+
+builder.Services.AddHostedService<TestUserSeederHostedService>();
 
 builder.Services.AddControllers();
 builder.Services.AddFluentValidationAutoValidation();
